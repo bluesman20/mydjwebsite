@@ -1,3 +1,6 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,16 +12,16 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Fancy - Creative Agency Template</title>
+    <title> Creative Agency </title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
 
     <!-- Core Stylesheet -->
-    <link href="style.css" rel="stylesheet">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
 
     <!-- Responsive CSS -->
-    <link href="css/responsive/responsive.css" rel="stylesheet">
+    <link href="{% static 'css/responsive/responsive.css' %}" rel="stylesheet">
 
 </head>
 
@@ -57,7 +60,7 @@
             <div class="row h-100">
                 <div class="col-12 h-100">
                     <nav class="h-100 navbar navbar-expand-lg align-items-center">
-                        <a class="navbar-brand" href="index.html">fancy</a>
+                        <a class="navbar-brand" href="index.html">Ali</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fancyNav" aria-controls="fancyNav" aria-expanded="false" aria-label="Toggle navigation"><span class="ti-menu"></span></button>
                         <div class="collapse navbar-collapse" id="fancyNav">
                             <ul class="navbar-nav ml-auto">
@@ -99,7 +102,7 @@
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Hero Area Start ***** -->
-    <div class="fancy-hero-area bg-img bg-overlay animated-img" style="background-image: url(img/bg-img/hero-1.jpg);">
+    <div class="fancy-hero-area bg-img bg-overlay animated-img" style="background-image: url(/static/img/bg-img/hero-1.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -166,7 +169,7 @@
 
                 <div class="col-12 col-lg-6 col-xl-5 ml-xl-auto">
                     <div class="about-us-thumb wow fadeInUp" data-wow-delay="0.5s">
-                        <img src="img/bg-img/about-1.jpg" alt="">
+                        <img src="static/img/bg-img/about-1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -178,7 +181,7 @@
     <section class="fancy-skills-area section-padding-200">
         <!-- Side Thumb -->
         <div class="skills-side-thumb">
-            <img src="img/bg-img/skills.png" alt="">
+            <img src="/static/img/bg-img/skills.png" alt="">
         </div>
         <!-- Skills Content -->
         <div class="container">
@@ -496,13 +499,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- ***** Footer Area End ***** -->
 
     <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
     <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
     <!-- Bootstrap-4 js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
     <!-- All Plugins js -->
-    <script src="js/others/plugins.js"></script>
+    <script src="{% static 'js/others/plugins.js' %}"></script>
     <!-- Active JS -->
-    <script src="js/active.js"></script>
+    <script src="{% static 'js/active.js' %}"></script>
 </body>
